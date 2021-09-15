@@ -1,0 +1,977 @@
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/dummy
+$ touch abc.txt
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/dummy
+$ git init
+Initialized empty Git repository in C:/Users/Neosoft/Desktop/dummy/.git/
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/dummy (master)
+$ ls
+abc.txt
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/dummy (master)
+$ ls -a
+./  ../  .git/  abc.txt
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/dummy (master)
+$ ls -all
+total 17
+drwxr-xr-x 1 Neosoft 197121  0 Sep 15 15:32 ./
+drwxr-xr-x 1 Neosoft 197121  0 Sep 15 15:31 ../
+drwxr-xr-x 1 Neosoft 197121  0 Sep 15 15:32 .git/
+-rw-r--r-- 1 Neosoft 197121 10 Sep 15 15:32 abc.txt
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/dummy (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        abc.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/dummy (master)
+$ git add abc.txt
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/dummy (master)
+$ git commit -m "dummy first abc txt msg"
+[master (root-commit) 49eadf8] dummy first abc txt msg
+ 1 file changed, 1 insertion(+)
+ create mode 100644 abc.txt
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/dummy (master)
+$ git remote add origin https://github.com/MonaliGanganeNeosoft/dummy-for-new-start1.git
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/dummy (master)
+$ git push -u origin master
+To https://github.com/MonaliGanganeNeosoft/dummy-for-new-start1.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/MonaliGanganeNeosoft/dummy-for-new-start1.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/dummy (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/dummy (master)
+$
+*********************************************************************************************************
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/dummy (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/dummy (master)
+$ git remove origin
+git: 'remove' is not a git command. See 'git --help'.
+
+The most similar command is
+        remote
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/dummy (master)
+$ git remove origin master
+git: 'remove' is not a git command. See 'git --help'.
+
+The most similar command is
+        remote
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/dummy (master)
+$ git remove remote origin master
+git: 'remove' is not a git command. See 'git --help'.
+
+The most similar command is
+        remote
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/dummy (master)
+$ git --help
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone             Clone a repository into a new directory
+   init              Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add               Add file contents to the index
+   mv                Move or rename a file, a directory, or a symlink
+   restore           Restore working tree files
+   rm                Remove files from the working tree and from the index
+   sparse-checkout   Initialize and modify the sparse-checkout
+
+examine the history and state (see also: git help revisions)
+   bisect            Use binary search to find the commit that introduced a bug
+   diff              Show changes between commits, commit and working tree, etc
+   grep              Print lines matching a pattern
+   log               Show commit logs
+   show              Show various types of objects
+   status            Show the working tree status
+
+grow, mark and tweak your common history
+   branch            List, create, or delete branches
+   commit            Record changes to the repository
+   merge             Join two or more development histories together
+   rebase            Reapply commits on top of another base tip
+   reset             Reset current HEAD to the specified state
+   switch            Switch branches
+   tag               Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch             Download objects and refs from another repository
+   pull              Fetch from and integrate with another repository or a local branch
+   push              Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/dummy (master)
+$ git rm origin master
+fatal: pathspec 'origin' did not match any files
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/dummy (master)
+$ git rm master
+fatal: pathspec 'master' did not match any files
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/dummy (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/dummy (master)
+$ git branch
+* master
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/dummy (master)
+$ git push -u origin master
+To https://github.com/MonaliGanganeNeosoft/dummy-for-new-start1.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/MonaliGanganeNeosoft/dummy-for-new-start1.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/dummy (master)
+$ ^C
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/dummy (master)
+$ git push origin master --force
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 233 bytes | 46.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/MonaliGanganeNeosoft/dummy-for-new-start1.git
+ + daede8b...49eadf8 master -> master (forced update)
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/dummy (master)
+$ git branch ecom
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/dummy (master)
+$ git checkout ecom
+Switched to branch 'ecom'
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/dummy (ecom)
+$ touch ecom.txt
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/dummy (ecom)
+$ git status
+On branch ecom
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ecom.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/dummy (ecom)
+$ git init
+Reinitialized existing Git repository in C:/Users/Neosoft/Desktop/dummy/.git/
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/dummy (ecom)
+$ git add .
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/dummy (ecom)
+$ git commit -m "ecom first commit"
+[ecom 61d19b2] ecom first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 ecom.txt
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/dummy (ecom)
+$ git diff master..ecom
+diff --git a/ecom.txt b/ecom.txt
+new file mode 100644
+index 0000000..fa956da
+--- /dev/null
++++ b/ecom.txt
+@@ -0,0 +1 @@
++bye moni
+\ No newline at end of file
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/dummy (ecom)
+$ git push -u origin ecom
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 282 bytes | 56.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'ecom' on GitHub by visiting:
+remote:      https://github.com/MonaliGanganeNeosoft/dummy-for-new-start1/pull/new/ecom
+remote:
+To https://github.com/MonaliGanganeNeosoft/dummy-for-new-start1.git
+ * [new branch]      ecom -> ecom
+Branch 'ecom' set up to track remote branch 'ecom' from 'origin'.
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/dummy (ecom)
+$ git checkout master
+Switched to branch 'master'
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/dummy (master)
+$ git pull origin ecom
+From https://github.com/MonaliGanganeNeosoft/dummy-for-new-start1
+ * branch            ecom       -> FETCH_HEAD
+Updating 49eadf8..61d19b2
+Fast-forward
+ ecom.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 ecom.txt
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/dummy (master)
+$ git push -u origi master
+fatal: 'origi' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/dummy (master)
+$ git push -u origin master
+To https://github.com/MonaliGanganeNeosoft/dummy-for-new-start1.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/MonaliGanganeNeosoft/dummy-for-new-start1.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/dummy (master)
+$ git add .
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/dummy (master)
+$ git commit -m "after pilling ecom"
+On branch master
+nothing to commit, working tree clean
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/dummy (master)
+$ git push -u origin master
+To https://github.com/MonaliGanganeNeosoft/dummy-for-new-start1.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/MonaliGanganeNeosoft/dummy-for-new-start1.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/dummy (master)
+$ git pull -u origin ecom
+error: unknown switch `u'
+usage: git pull [<options>] [<repository> [<refspec>...]]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --progress            force progress reporting
+    --recurse-submodules[=<on-demand>]
+                          control for recursive fetching of submodules
+
+Options related to merging
+    -r, --rebase[=(false|true|merges|preserve|interactive)]
+                          incorporate changes by rebasing rather than merging
+    -n                    do not show a diffstat at the end of the merge
+    --stat                show a diffstat at the end of the merge
+    --log[=<n>]           add (at most <n>) entries from shortlog to merge commit message
+    --signoff[=...]       add a Signed-off-by trailer
+    --squash              create a single commit instead of doing a merge
+    --commit              perform a commit if the merge succeeds (default)
+    --edit                edit message before committing
+    --cleanup <mode>      how to strip spaces and #comments from message
+    --ff                  allow fast-forward
+    --ff-only             abort if fast-forward is not possible
+    --verify-signatures   verify that the named commit has a valid GPG signature
+    --autostash           automatically stash/stash pop before and after
+    -s, --strategy <strategy>
+                          merge strategy to use
+    -X, --strategy-option <option=value>
+                          option for selected merge strategy
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+    --allow-unrelated-histories
+                          allow merging unrelated histories
+
+Options related to fetching
+    --all                 fetch from all remotes
+    -a, --append          append to .git/FETCH_HEAD instead of overwriting
+    --upload-pack <path>  path to upload pack on remote end
+    -f, --force           force overwrite of local branch
+    -t, --tags            fetch all tags and associated objects
+    -p, --prune           prune remote-tracking branches no longer on remote
+    -j, --jobs[=<n>]      number of submodules pulled in parallel
+    --dry-run             dry run
+    -k, --keep            keep downloaded pack
+    --depth <depth>       deepen history of shallow clone
+    --shallow-since <time>
+                          deepen history of shallow repository based on time
+    --shallow-exclude <revision>
+                          deepen history of shallow clone, excluding rev
+    --deepen <n>          deepen history of shallow clone
+    --unshallow           convert to a complete repository
+    --update-shallow      accept refs that update .git/shallow
+    --refmap <refmap>     specify fetch refmap
+    -o, --server-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+    --negotiation-tip <revision>
+                          report that we have only objects reachable from this object
+    --show-forced-updates
+                          check for forced-updates on all updated branches
+    --set-upstream        set upstream for git pull/fetch
+
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/dummy (master)
+$ git pull origin ecom
+From https://github.com/MonaliGanganeNeosoft/dummy-for-new-start1
+ * branch            ecom       -> FETCH_HEAD
+Already up to date.
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/dummy (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/dummy (master)
+$ git diff master..ecom
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/dummy (master)
+$ git pull origin ecom
+From https://github.com/MonaliGanganeNeosoft/dummy-for-new-start1
+ * branch            ecom       -> FETCH_HEAD
+Already up to date.
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/dummy (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/dummy (master)
+$ git diff
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/dummy (master)
+$ git merge ecom
+Already up to date.
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/dummy (master)
+$ git push origin master -f
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/MonaliGanganeNeosoft/dummy-for-new-start1.git
+ + a2b6b49...61d19b2 master -> master (forced update)
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/dummy (master)
+$ git branch -D ecom
+Deleted branch ecom (was 61d19b2).
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/dummy (master)
+$ git push origin --delete ecom
+To https://github.com/MonaliGanganeNeosoft/dummy-for-new-start1.git
+ - [deleted]         ecom
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/dummy (master)
+$
+****************************************************************************************
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/key-generating
+$ ssh-keygen -t -C monali.gangane@neosoftmail.com
+Too many arguments.
+usage: ssh-keygen [-q] [-a rounds] [-b bits] [-C comment] [-f output_keyfile]
+                  [-m format] [-N new_passphrase] [-O option]
+                  [-t dsa | ecdsa | ecdsa-sk | ed25519 | ed25519-sk | rsa]
+                  [-w provider] [-Z cipher]
+       ssh-keygen -p [-a rounds] [-f keyfile] [-m format] [-N new_passphrase]
+                   [-P old_passphrase] [-Z cipher]
+       ssh-keygen -i [-f input_keyfile] [-m key_format]
+       ssh-keygen -e [-f input_keyfile] [-m key_format]
+       ssh-keygen -y [-f input_keyfile]
+       ssh-keygen -c [-a rounds] [-C comment] [-f keyfile] [-P passphrase]
+       ssh-keygen -l [-v] [-E fingerprint_hash] [-f input_keyfile]
+       ssh-keygen -B [-f input_keyfile]
+       ssh-keygen -D pkcs11
+       ssh-keygen -F hostname [-lv] [-f known_hosts_file]
+       ssh-keygen -H [-f known_hosts_file]
+       ssh-keygen -K [-a rounds] [-w provider]
+       ssh-keygen -R hostname [-f known_hosts_file]
+       ssh-keygen -r hostname [-g] [-f input_keyfile]
+       ssh-keygen -M generate [-O option] output_file
+       ssh-keygen -M screen [-f input_file] [-O option] output_file
+       ssh-keygen -I certificate_identity -s ca_key [-hU] [-D pkcs11_provider]
+                  [-n principals] [-O option] [-V validity_interval]
+                  [-z serial_number] file ...
+       ssh-keygen -L [-f input_keyfile]
+       ssh-keygen -A [-a rounds] [-f prefix_path]
+       ssh-keygen -k -f krl_file [-u] [-s ca_public] [-z version_number]
+                  file ...
+       ssh-keygen -Q [-l] -f krl_file [file ...]
+       ssh-keygen -Y find-principals -s signature_file -f allowed_signers_file
+       ssh-keygen -Y check-novalidate -n namespace -s signature_file
+       ssh-keygen -Y sign -f key_file -n namespace file ...
+       ssh-keygen -Y verify -f allowed_signers_file -I signer_identity
+                  -n namespace -s signature_file [-r revocation_file]
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/key-generating
+$ ssh-keygen -t rsa -C monali.gangane@neosoftmail.com
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/Neosoft/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Passphrases do not match.  Try again.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/Neosoft/.ssh/id_rsa
+Your public key has been saved in /c/Users/Neosoft/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:M2qpCtSK3bJ2xAQDlfNiZwpM2mO4fw1gdfXg070K8ao monali.gangane@neosoftmail.com
+The key's randomart image is:
++---[RSA 3072]----+
+|.o..   .o        |
+| .= . .. + .     |
+|+o * .  + o .    |
+|+.X =    +   .   |
+| B @    S . .    |
+|+.o.+  o = .     |
+|ooo..o+ . .      |
+| .oooo..         |
+| .o+. E          |
++----[SHA256]-----+
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/key-generating
+$
+*************************************************************************************
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/key-generating
+$ git clone git@github.com:MonaliGanganeNeosoft/Mysshkey.git
+Cloning into 'Mysshkey'...
+Enter passphrase for key '/c/Users/Neosoft/.ssh/id_rsa':
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/key-generating
+$ git init
+Initialized empty Git repository in C:/Users/Neosoft/Desktop/key-generating/.git/
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/key-generating (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Mysshkey/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/key-generating (master)
+$ git add .
+warning: adding embedded git repository: Mysshkey
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> Mysshkey
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached Mysshkey
+hint:
+hint: See "git help submodule" for more information.
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/key-generating (master)
+$ git add moni.txt
+fatal: pathspec 'moni.txt' did not match any files
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/key-generating (master)
+$ git add moni
+fatal: pathspec 'moni' did not match any files
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/key-generating (master)
+$ ls
+Mysshkey/
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/key-generating (master)
+$ cd Mysshkey
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/key-generating/Mysshkey (master)
+$ ls
+README.md  moni.txt
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/key-generating/Mysshkey (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        moni.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/key-generating/Mysshkey (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/Neosoft/Desktop/key-generating/Mysshkey/.git/
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/key-generating/Mysshkey (master)
+$ git commit -m "ssh commit1'
+>
+> ^C
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/key-generating/Mysshkey (master)
+$ git commit -m "ssh commit1"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        moni.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/key-generating/Mysshkey (master)
+$ git push -u origin master
+Enter passphrase for key '/c/Users/Neosoft/.ssh/id_rsa':
+Everything up-to-date
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/key-generating/Mysshkey (master)
+$
+*******************************************************************
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/key-generating/Mysshkey (master)
+$ git branch abc
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/key-generating/Mysshkey (master)
+$ git branch bca
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/key-generating/Mysshkey (master)
+$ git checkout abc
+Switched to branch 'abc'
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/key-generating/Mysshkey (abc)
+$ git status
+On branch abc
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        abc.txt
+        moni.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/key-generating/Mysshkey (abc)
+$ git add .
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/key-generating/Mysshkey (abc)
+$ git commit -m "abc commit"
+[abc e4112e4] abc commit
+ 2 files changed, 2 insertions(+)
+ create mode 100644 abc.txt
+ create mode 100644 moni.txt
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/key-generating/Mysshkey (abc)
+$ git checkout bca
+Switched to branch 'bca'
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/key-generating/Mysshkey (bca)
+$ git status
+On branch bca
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bca.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/key-generating/Mysshkey (bca)
+$ git add .
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/key-generating/Mysshkey (bca)
+$ git commit -m "bca commit"
+[bca 9b4e6cd] bca commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 bca.txt
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/key-generating/Mysshkey (bca)
+$ git status
+On branch bca
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ertf.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/key-generating/Mysshkey (bca)
+$ git add .
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/key-generating/Mysshkey (bca)
+$ git commit -m "ertf msg"
+[bca d116015] ertf msg
+ 1 file changed, 1 insertion(+)
+ create mode 100644 ertf.txt
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/key-generating/Mysshkey (bca)
+$ git checkout abc
+Switched to branch 'abc'
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/key-generating/Mysshkey (abc)
+$ git rebase bca
+Successfully rebased and updated refs/heads/abc.
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/key-generating/Mysshkey (abc)
+$ git status
+On branch abc
+nothing to commit, working tree clean
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/key-generating/Mysshkey (abc)
+$
+************************************************
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/merege conflict
+$ git init A
+Initialized empty Git repository in C:/Users/Neosoft/Desktop/merege conflict/A/.git/
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/merege conflict
+$ git init B
+Initialized empty Git repository in C:/Users/Neosoft/Desktop/merege conflict/B/.git/
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/merege conflict
+$ cd A
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/merege conflict/A (master)
+$ git remote add origin https://github.com/MonaliGanganeNeosoft/dummy-for-new-start1.git
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/merege conflict/A (master)
+$ git pull origin master
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 6 (delta 0), reused 6 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), 463 bytes | 10.00 KiB/s, done.
+From https://github.com/MonaliGanganeNeosoft/dummy-for-new-start1
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> origin/master
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/merege conflict/A (master)
+$ cd ..
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/merege conflict
+$ cd B
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/merege conflict/B (master)
+$ git remote add origin https://github.com/MonaliGanganeNeosoft/dummy-for-new-start1.git
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/merege conflict/B (master)
+$ git pull origin master
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 6 (delta 0), reused 6 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), 463 bytes | 10.00 KiB/s, done.
+From https://github.com/MonaliGanganeNeosoft/dummy-for-new-start1
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> origin/master
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/merege conflict/B (master)
+$ cd ..
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/merege conflict
+$ cd A
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/merege conflict/A (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ecom.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/merege conflict/A (master)
+$ git add .
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/merege conflict/A (master)
+$ git commit -m "first A'
+> ^C
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/merege conflict/A (master)
+$ git commit -m "first A"
+[master 61e92df] first A
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/merege conflict/A (master)
+$ git push -u origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 300 bytes | 50.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/MonaliGanganeNeosoft/dummy-for-new-start1.git
+   61d19b2..61e92df  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/merege conflict/A (master)
+$ cd ..
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/merege conflict
+$ cd B
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/merege conflict/B (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ecom.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/merege conflict/B (master)
+$ git add .
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/merege conflict/B (master)
+$ git commit -m "b update commit"
+[master 1fc9f2b] b update commit
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/merege conflict/B (master)
+$ git push -u origin master
+To https://github.com/MonaliGanganeNeosoft/dummy-for-new-start1.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/MonaliGanganeNeosoft/dummy-for-new-start1.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/merege conflict/B (master)
+$ git rebase --continue
+fatal: No rebase in progress?
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/merege conflict/B (master)
+$ git meregetool
+git: 'meregetool' is not a git command. See 'git --help'.
+
+The most similar command is
+        mergetool
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/merege conflict/B (master)
+$ git mergetool
+
+This message is displayed because 'merge.tool' is not configured.
+See 'git mergetool --tool-help' or 'git help config' for more details.
+'git mergetool' will now attempt to use one of the following tools:
+opendiff kdiff3 tkdiff xxdiff meld tortoisemerge gvimdiff diffuse diffmerge ecmerge p4merge araxis bc codecompare smerge emerge vimdiff nvimdiff
+No files need merging
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/merege conflict/B (master)
+$ git rebase --continue
+fatal: No rebase in progress?
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/merege conflict/B (master)
+$ git push origin master
+To https://github.com/MonaliGanganeNeosoft/dummy-for-new-start1.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/MonaliGanganeNeosoft/dummy-for-new-start1.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/merege conflict/B (master)
+$ git push origin master -f
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (9/9), 748 bytes | 74.00 KiB/s, done.
+Total 9 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/MonaliGanganeNeosoft/dummy-for-new-start1.git
+ + 61e92df...1fc9f2b master -> master (forced update)
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/merege conflict/B (master)
+$ git
+*****************************************************************************
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/reset
+$ git init
+Initialized empty Git repository in C:/Users/Neosoft/Desktop/reset/.git/
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/reset (master)
+$ git add .
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/reset (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   aa.txt
+
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/reset (master)
+$ git reset --hard
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/reset (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/reset (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bb.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/reset (master)
+$ git add .
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/reset (master)
+$ git reset --mixed
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/reset (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bb.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/reset (master)
+$ git add .
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/reset (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   bb.txt
+
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/reset (master)
+$ git commit -m "rest file'
+> ^C
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/reset (master)
+$ git commit -m "rest file"
+[master (root-commit) bd8a7ab] rest file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 bb.txt
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/reset (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/reset (master)
+$ git reset --soft
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/reset (master)
+$ git log
+commit bd8a7aba12e9fc32d7b098bbd2ceff8f1601f19f (HEAD -> master)
+Author: monaligangane <monali.gangane@neosoftmail.com>
+Date:   Wed Sep 15 16:50:32 2021 +0530
+
+    rest file
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/reset (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   bb.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/reset (master)
+$ git add .
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/reset (master)
+$ git commit -m "file 2 reset"
+[master 34337b7] file 2 reset
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/reset (master)
+$ git log
+commit 34337b76587c4b574625e18836342c3d5749b481 (HEAD -> master)
+Author: monaligangane <monali.gangane@neosoftmail.com>
+Date:   Wed Sep 15 16:52:38 2021 +0530
+
+    file 2 reset
+
+commit bd8a7aba12e9fc32d7b098bbd2ceff8f1601f19f
+Author: monaligangane <monali.gangane@neosoftmail.com>
+Date:   Wed Sep 15 16:50:32 2021 +0530
+
+    rest file
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/reset (master)
+$ ^C
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/reset (master)
+$ git reset --soft bd8a7aba12e9fc32d7b098bbd2ceff8f1601f19f
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/reset (master)
+$ git log
+commit bd8a7aba12e9fc32d7b098bbd2ceff8f1601f19f (HEAD -> master)
+Author: monaligangane <monali.gangane@neosoftmail.com>
+Date:   Wed Sep 15 16:50:32 2021 +0530
+
+    rest file
+
+Neosoft@DESKTOP-43QJUVV MINGW64 ~/Desktop/reset (master)
+$
+
